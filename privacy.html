@@ -39,6 +39,18 @@
     </style>
 </head>
 <body>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">itori</a>
+                <div class="nav-links">
+                    <a href="features.html">Features</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html" class="active">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- Hero -->
     <section class="hero" style="min-height: 40vh;">
         <div class="container">
@@ -92,38 +104,101 @@
             <h3>Optional AI Features</h3>
             <p>If you use AI features with your own API keys:</p>
             <ul>
-                <li>You control which service to use</li>
-                <li>Data goes directly to your chosen service</li>
-                <li>We don't store or monitor your API keys</li>
-                <li>AI features are optional and can be disabled</li>
+                <li>You control which service to use (OpenAI, Anthropic, local models, etc.)</li>
+                <li>Data is sent directly from your device to your chosen service</li>
+                <li>We don't store, access, or monitor your API keys</li>
+                <li>We don't process or see any content sent to AI services</li>
+                <li>Subject to your chosen service's privacy policy</li>
+                <li>AI features are completely optional and can be disabled</li>
             </ul>
 
+            <h3>Service Providers</h3>
+            <p><strong>Apple Services:</strong> If you enable iCloud sync, your data is processed by Apple Inc. according to their <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a>. We do not control or have access to your iCloud data.</p>
+
             <h2>4. Permissions</h2>
-            <h3>Calendar (Optional)</h3>
+            <p>Itori may request the following optional permissions:</p>
+            
+            <h3>Calendar Access (Optional)</h3>
             <ul>
-                <li>Read events locally only</li>
-                <li>No data transmitted externally</li>
+                <li><strong>Purpose:</strong> Display school events alongside assignments</li>
+                <li><strong>Data Access:</strong> Read-only access to calendar events</li>
+                <li><strong>Processing:</strong> Events are read locally, never transmitted</li>
+                <li><strong>Control:</strong> Can be revoked anytime in iOS Settings → Itori → Calendars</li>
             </ul>
 
             <h3>Notifications (Optional)</h3>
             <ul>
-                <li>All generated locally on your device</li>
-                <li>No data collected or transmitted</li>
+                <li><strong>Purpose:</strong> Remind you of upcoming assignments and study sessions</li>
+                <li><strong>Data Collection:</strong> None - all notifications generated locally</li>
+                <li><strong>Control:</strong> Can be disabled in iOS Settings → Notifications → Itori</li>
+            </ul>
+
+            <h3>Apple Watch (Optional)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Access timer features on Apple Watch</li>
+                <li><strong>Data Sync:</strong> Syncs only between your paired devices</li>
+                <li><strong>Processing:</strong> All data stays within your personal Apple ecosystem</li>
             </ul>
 
             <h2>5. Children's Privacy</h2>
             <p>Safe for all ages. Since we don't collect data, we comply with COPPA, GDPR, and all children's privacy regulations.</p>
 
             <h2>6. Your Rights</h2>
+            <p>You have complete control over your data:</p>
             <ul>
-                <li><strong>Access:</strong> All your data is in the app</li>
-                <li><strong>Export:</strong> Export anytime</li>
-                <li><strong>Delete:</strong> Delete the app to remove all data</li>
-                <li><strong>Control:</strong> Manage iCloud in Settings</li>
+                <li><strong>Access:</strong> All your data is accessible within the app at all times</li>
+                <li><strong>Rectification:</strong> Edit any information directly in the app</li>
+                <li><strong>Erasure:</strong> Delete the app to remove all local data permanently</li>
+                <li><strong>Portability:</strong> Export your data anytime (feature in development)</li>
+                <li><strong>Object to Processing:</strong> Not applicable - we don't process your data</li>
+                <li><strong>Withdraw Consent:</strong> Disable iCloud sync anytime in Settings</li>
+            </ul>
+
+            <h2>7. Security</h2>
+            <p>Your data security:</p>
+            <ul>
+                <li>All data stored using iOS secure storage (Core Data)</li>
+                <li>Protected by your device's built-in security (passcode, Face ID, Touch ID)</li>
+                <li>iCloud data encrypted in transit and at rest by Apple</li>
+                <li>No server infrastructure = no server breaches possible</li>
+                <li>No user accounts = no password leaks possible</li>
             </ul>
 
             <h2>7. Contact</h2>
-            <p>Questions? Email: <strong>privacy@itori.app</strong></p>
+            <p>Questions about this privacy policy? Contact us at:</p>
+            <p><strong>Email:</strong> privacy@itori.app</p>
+            <p><strong>Developer:</strong> [Your Name or Company Name]</p>
+            <p>We will respond within 48 hours.</p>
+
+            <h2>8. Data Retention</h2>
+            <p>Since all data is stored locally on your device:</p>
+            <ul>
+                <li>Data persists until you delete the app</li>
+                <li>Uninstalling the app removes all local data</li>
+                <li>iCloud data (if enabled) persists in your iCloud account until you delete it</li>
+                <li>We do not retain any data on our servers (we don't have servers)</li>
+            </ul>
+
+            <h2>9. International Users</h2>
+            <p>Itori works the same way worldwide. Your data never leaves your device except through optional iCloud sync using your personal Apple ID.</p>
+            <ul>
+                <li><strong>GDPR (EU):</strong> Compliant - no data collection</li>
+                <li><strong>CCPA (California):</strong> Compliant - no data selling or sharing</li>
+                <li><strong>COPPA (Children):</strong> Compliant - safe for all ages</li>
+                <li><strong>PIPEDA (Canada):</strong> Compliant - no personal data processing</li>
+            </ul>
+
+            <h2>10. Changes to This Policy</h2>
+            <p>If we make changes to this privacy policy:</p>
+            <ul>
+                <li>We will update the "Last Updated" date at the top</li>
+                <li>Material changes will be announced in the app</li>
+                <li>Continued use constitutes acceptance of changes</li>
+                <li>The latest version is always available at this URL</li>
+            </ul>
+
+            <h2>11. Legal Basis for Processing (GDPR)</h2>
+            <p>Since we don't collect or process personal data, no legal basis is required. All data processing happens locally on your device under your control.</p>
 
             <div class="summary-box">
                 <h2 style="margin-top: 0;">Summary</h2>
