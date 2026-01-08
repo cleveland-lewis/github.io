@@ -8,6 +8,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button id="feature-request-btn" class="floating-btn" aria-label="Request a feature">
+        <span>💡</span>
+    </button>
+    
+    <div id="feature-request-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Request a Feature</h2>
+            <p>Have an idea to make Itori better? We'd love to hear it!</p>
+            <form id="feature-request-form">
+                <div class="form-group">
+                    <label for="feature-name">Your Name</label>
+                    <input type="text" id="feature-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="feature-email">Your Email</label>
+                    <input type="email" id="feature-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="feature-title">Feature Title</label>
+                    <input type="text" id="feature-title" name="title" required placeholder="Brief description of your idea">
+                </div>
+                <div class="form-group">
+                    <label for="feature-description">Description</label>
+                    <textarea id="feature-description" name="description" rows="5" required placeholder="Tell us more about your feature request..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('feature-request-modal');
+        const btn = document.getElementById('feature-request-btn');
+        const closeBtn = document.querySelector('.modal-close');
+        const form = document.getElementById('feature-request-form');
+
+        btn.onclick = () => modal.classList.add('show');
+        closeBtn.onclick = () => modal.classList.remove('show');
+        window.onclick = (e) => { if (e.target === modal) modal.classList.remove('show'); };
+
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            const name = document.getElementById('feature-name').value;
+            const email = document.getElementById('feature-email').value;
+            const title = document.getElementById('feature-title').value;
+            const description = document.getElementById('feature-description').value;
+            
+            const subject = encodeURIComponent(`Feature Request: ${title}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nFeature Request:\n${title}\n\nDescription:\n${description}`);
+            
+            window.location.href = `mailto:clevelandlewisiii@icloud.com?subject=${subject}&body=${body}`;
+            
+            modal.classList.remove('show');
+            form.reset();
+        };
+    </script>
     <nav class="top-nav">
         <div class="container">
             <div class="nav-content">
