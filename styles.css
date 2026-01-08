@@ -197,15 +197,6 @@ body {
     text-align: center;
 }
 
-.feature-icon {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: var(--primary);
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
-    letter-spacing: -0.5px;
-}
-
 .feature-item h3 {
     font-size: 1.25rem;
     font-weight: 600;
